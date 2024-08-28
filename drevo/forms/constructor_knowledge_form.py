@@ -61,7 +61,7 @@ class MainZnInConstructorCreateEditForm(ZnanieCreateForm):
             'filling_tables': 'Таблица',
             'table': 'Таблица',
             'quiz': 'Тест',
-            'discussion': 'Дискуссии'
+            'discussion': 'Дискуссии',
         }
         if type_of_zn:
             self.fields['tz'].initial = Tz.objects.get(name=tz_name_mapping.get(type_of_zn))
